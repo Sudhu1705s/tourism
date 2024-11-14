@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>union Territories of India Tourism</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      font-size: large;
+      background-color: #222;
+      backdrop-filter: blur(50px);
+    }
+    .hero-section {
+      background: url('/path_to_your_hero_image.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .card {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .card-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+    .card-buttons a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .card-buttons a:nth-child(1) { background-color: #007bff; }
+    .card-buttons a:nth-child(2) { background-color: #28a745; }
+    .card-buttons a:nth-child(3) { background-color: #ffc107; }
+    .card-buttons a:nth-child(4) { background-color: #dc3545; }
+    .card-buttons a:hover {
+      opacity: 0.8;
+    }
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body style="background-color:rgb(255, 251, 245);">
+
+<!-- Header -->
+<nav class="navbar navbar-expand-sm fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" style="color: aliceblue; font-size: larger;" href="#">Indian Tourism</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="./about.html">About</a></li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="./sign_in.html"><i class="fa fa-user"></i> Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="./login.html"><i class="fa fa-sign-in"></i> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+  <h1 style="color: #222;">Explore Union Territories of India</h1>
+  <p style="color: #222;">Experience the rich cultural heritage and stunning landscapes of Union Territories India.</p>
+</div>
+
+<!-- Content Section -->
+<div class="container mt-5">
+  <h2 class="text-center">Popular Destinations in Union Territories of India</h2>
+  <div class="row">
+    <!-- Example Card -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="/img/jammu.jpeg" class="card-img-top" alt="Destination" style="height: 190px;">
+        <div class="card-body">
+          <h5 class="card-title">Jammu & Kashmir</h5>
+          <p class="card-text">Humble, but not Subdued</p>
+
+          <div class="card-buttons">
+            <a href="https://tourism.jk.gov.in/" class="btn">Visit</a>
+            <a href="https://www.kayak.co.in/Jammu-and-Kashmir-India-Hotels.1607.dr.html?sck=SEM&skipapp=true&gclid=Cj0KCQjw28W2BhC7ARIsAPerrcIIlA3yhaob5-lxK4gAgN_6MdYP4oDAg76HXeoUWZ5JSqMzy0uZHbIaAvFwEALw_wcB" class="btn">book hotel</a>
+           </div>
+           <div class="card-buttons">
+              <a href="https://www.kayak.co.in/Jammu-and-Kashmir-India-Hotels.1607.dr.html?sck=SEM&skipapp=true&gclid=Cj0KCQjw28W2BhC7ARIsAPerrcIIlA3yhaob5-lxK4gAgN_6MdYP4oDAg76HXeoUWZ5JSqMzy0uZHbIaAvFwEALw_wcB" class="btn">book trip</a>
+              <a href="https://www.eazydiner.com/jammu" class="btn">book resturant </a>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="/img/leh-Ladakh.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+        <div class="card-body">
+          <h5 class="card-title">Ladakh</h5>
+          <p class="card-text"><i>Khill, Shill, Mil, Tille</i><br>Work hard, stay strong, maintain unity, and be committed</p>
+          <div class="card-buttons">
+            <a href="https://ladakh.gov.in/tourism/" class="btn">Visit</a>
+            <a href="https://www.goibibo.com/hotels/hotels-in-leh-with-restaurant/" class="btn">book hotel</a>
+           </div>
+           <div class="card-buttons">
+              <a href="https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html?srsltid=AfmBOooxmtkbi9dOqibn7jnf_s0AvsvlrGx8Eu1Do2v1Hnrgn8LE-xpH" class="btn">book trip</a>
+              <a href="https://www.thegranddragonladakh.com/dining.php" class="btn">book resturant </a>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/Dadar and Nagar haveli.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Dadra & Nagar Haveli</h5>
+            <p class="card-text"><i>Satyameva Jayate</i><br>Truth Alone Triumphs</p>
+            <div class="card-buttons">
+                <a href="https://dnh.gov.in/tourist-places/" class="btn">Visit</a>
+                <a href="https://www.makemytrip.com/hotels/hotel-listing/?locusId=CTDAD&locusType=city&city=CTDAD&searchText=Dadra&regionNearByExp=3&country=IN&roomStayQualifier=2e0e&reference=hotel&type=city&cmp=SEM|D|DH|G|Destination|DH_Destination_CTDAD_Dadra|CTDAD_Hotel|RSA|&mf_source=google&mf_medium=cpc&mf_campaignid=19486087869&cid=Cj0KCQjw28W2BhC7ARIsAPerrcKjyfqNY5Zb4tLgWhRolt_Klo5pZ4wHEh6-2imCZy57kzGmDomHIQ8aAqRHEALw_wcB&pl=&kw=hotels%20in%20dadra&adg=148534905041&aid=646008675745&campaign_type=search&device=c&mf_campaign={HARDCODE_CAMPAIGN_NAME}&gad_source=1&gclid=Cj0KCQjw28W2BhC7ARIsAPerrcKjyfqNY5Zb4tLgWhRolt_Klo5pZ4wHEh6-2imCZy57kzGmDomHIQ8aAqRHEALw_wcB" class="btn">book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/holidays-international/vacation-tour-packages.html?gclid=Cj0KCQjw28W2BhC7ARIsAPerrcL9r-gfqSRYA_FUEPSk-aMjpungsSTE98eQfP5b-g3HH0mH_YHVMl8aAoa0EALw_wcB&cmp=SEM|D|Holiday|G|Generic|OBT_India_Generic|Non_Brand_Generic|RSA|Regular|572851812880&s_kwcid=AL!1631!3!572851812880!p!!g!!tourism%20package&ef_id=Cj0KCQjw28W2BhC7ARIsAPerrcL9r-gfqSRYA_FUEPSk-aMjpungsSTE98eQfP5b-g3HH0mH_YHVMl8aAoa0EALw_wcB:G:s&gad_source=1" class="btn">book trip</a>
+                  <a href="https://www.tripadvisor.com/Restaurants-g297597-zfp10602-Dadra_and_Nagar_Haveli.html" class="btn">book resturant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/Lakshadweep.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Lakshadweep</h5>
+            <p class="card-text">Truth Alone Triumphs</p>
+            <div class="card-buttons">
+                <a href="https://lakshadweep.gov.in/tourism/tourist-packages/" class="btn">Visit</a>
+                <a href="https://www.makemytrip.com/hotels/" class="btn">book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://lakshadweep.gov.in/tourism/tourist-packages/" class="btn">book trip</a>
+                  <a href="https://www.tripadvisor.in/Restaurants-g297640-Lakshadweep.html" class="btn">book resturant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/Chandigarh.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Chandigarh</h5>
+            <p class="card-text">Open to Give, Open to Receive</p>
+            <div class="card-buttons">
+                <a href="http://chandigarhtourism.gov.in/" class="btn">Visit</a>
+                <a href="https://www.makemytrip.com/hotels/hotel-listing/?locusId=CTIXC&locusType=city&city=CTIXC&searchText=Chandigarh&filterData=USER_RATING|4&regionNearByExp=3&country=IN&roomStayQualifier=2e0e&reference=hotel&type=city&cmp=SEM|D|DH|G|Destination|DH_Destination_CTIXC_Chandigarh|CTIXC_Best|RSA|&mf_source=google&mf_medium=cpc&mf_campaignid=19494424225&cid=Cj0KCQjw28W2BhC7ARIsAPerrcLdTzQ_O11ITn6nSUmlnpiS77-toQdTOBJuFPc1Omc-IVQYTVDbpTsaAu6uEALw_wcB&pl=&kw=best%20hotels%20in%20chandigarh&adg=142824198217&aid=646076926484&campaign_type=search&device=c&mf_campaign={HARDCODE_CAMPAIGN_NAME}&gad_source=1&gclid=Cj0KCQjw28W2BhC7ARIsAPerrcLdTzQ_O11ITn6nSUmlnpiS77-toQdTOBJuFPc1Omc-IVQYTVDbpTsaAu6uEALw_wcB" class="btn">book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/holidays-india/chandigarh-travel-packages.html?gclid=Cj0KCQjw28W2BhC7ARIsAPerrcKPghphar8Mu_c4Mmonzg-Y2wUtbSJvKyxf-u0f4KTgquLF752M_YIaAtyXEALw_wcB&ef_id=Cj0KCQjw28W2BhC7ARIsAPerrcKPghphar8Mu_c4Mmonzg-Y2wUtbSJvKyxf-u0f4KTgquLF752M_YIaAtyXEALw_wcB:G:s&cmp=SEM|D|Holiday|G|DSA|DOM_India_DSA_Desktop|Non_Brand_DSA|ETA|Regular|642469606921&gad_source=1" class="btn">book trip</a>
+                  <a href="https://www.tripadvisor.in/Restaurants-g297596-zfp10602-Chandigarh.html" class="btn">book resturant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/delhi.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Delhi</h5>
+            <p class="card-text"><i>Shanti, Seva, Nyaya</i><br>Peace, Service, Justice</p>
+            <div class="card-buttons">
+              <a href="http://www.delhitourism.gov.in/delhitourism/index.jsp" class="btn">Visit</a>
+              <a href="https://www.booking.com/searchresults.en-gb.html?aid=1610687&label=delhi-67bZwFpMAFvIqZbSy_TjNQS590453496948%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-310887145101%3Alp9061825%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfpWGnRw6lOGgfEoJVv7zYo&gclid=Cj0KCQjw28W2BhC7ARIsAPerrcKfrNwvtQVERAk5hwQ7mhFGma6z3wIb0nts7VJ5ZQhlSgIX8PmZy8oaAnOzEALw_wcB&dest_type=city&redirected=1&dest_id=-2094230&source=city&redirected_from_city=1&keep_landing=1&sid=38e7cb6de82de83aaafa77267ef577f5" class="btn">book hotel</a>
+             </div>
+             <div class="card-buttons">
+                <a href="https://www.booking.com/searchresults.en-gb.html?aid=1610687&label=delhi-67bZwFpMAFvIqZbSy_TjNQS590453496948%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-310887145101%3Alp9061825%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfpWGnRw6lOGgfEoJVv7zYo&gclid=Cj0KCQjw28W2BhC7ARIsAPerrcKfrNwvtQVERAk5hwQ7mhFGma6z3wIb0nts7VJ5ZQhlSgIX8PmZy8oaAnOzEALw_wcB&dest_type=city&redirected=1&dest_id=-2094230&source=city&redirected_from_city=1&keep_landing=1&sid=38e7cb6de82de83aaafa77267ef577f5" class="btn">book trip</a>
+                <a href="https://www.bookmytable.co.in/delhi" class="btn">book resturant </a>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/Pondicherry.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Puducherry</h5>
+            <p class="card-text"><i>Satyameva Jayat</i><br>Truth Alone Triumphs</p>
+            <div class="card-buttons">
+                <a href="https://tourism.py.gov.in/" class="btn">Visit</a>
+                <a href="https://www.makemytrip.com/hotels/hotel-listing/?_uCurrency=INR&checkin=date_7&checkout=date_8&city=CTPONDI&country=IN&filterData=PROPERTY_TYPE%7CCottage&locusId=CTPONDI&locusType=city&roomStayQualifier=2e0e&searchText=Pondicherry%2C%20India&type=city&cmp=SEM|D|DH|G|Destination|DH_AltAcco_Cottages_Exact|XPC|RSA|Regular|&mf_source=google&mf_medium=cpc&mf_campaignid=1691826229&cid=Cj0KCQjw28W2BhC7ARIsAPerrcIajZUhi4rNYSpbM-ov7qcUHgAWlPCYyhf5XWeVkV5iupYvxL1fIvQaAqcEEALw_wcB&pl=&kw=pondicherry%20lodge%20room&adg=74443747108&aid=598635531816&campaign_type=search&device=c&mf_campaign={HARDCODE_CAMPAIGN_NAME}&gad_source=1&gclid=Cj0KCQjw28W2BhC7ARIsAPerrcIajZUhi4rNYSpbM-ov7qcUHgAWlPCYyhf5XWeVkV5iupYvxL1fIvQaAqcEEALw_wcB" class="btn">book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/holidays-india/puducherry-travel-packages.html?srsltid=AfmBOoq4P96XKsXD75gAfVikob_Zsu7X-3vtC-YHqeiCthqPLlTvMvPZ" class="btn">book trip</a>
+                  <a href="https://www.makemytrip.com/tripideas/food-pondicherry?srsltid=AfmBOoroY1QH0BovEU_DOvxl_pUWx4SgaTHo8H6L_R9lpFUNemDdnHCH" class="btn">book resturant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/Daman and diu.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Daman & Diu</h5>
+            <p class="card-text"><i>Satyam Shivam Sundaram</i><br>Truth, Godliness, and Beauty</p>
+            <div class="card-buttons">
+                <a href="https://www.tourismdddnh.in/" class="btn">Visit</a>
+                <a href="https://www.makemytrip.com/hotels/daman-hotels.html?srsltid=AfmBOoqim0soeOF4ARPvgq1LrqA0paN2dUBISfUvZ5eivkrgmxZlj9Vb" class="btn">book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.yatra.com/india-tour-packages/daman-and-diu-packages-from-kolkata" class="btn">book trip</a>
+                  <a href="https://www.yatra.com/hotels/hotels-with-restaurant-in-daman" class="btn">book resturant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/andaman_nicobar.jpeg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Andaman & Nicobar</h5>
+            <p class="card-text"><i>Sarvadharma Sambhava</i><br>All religions are equal</p>
+            <div class="card-buttons">
+                <a href="http://www.andaman.gov.in" class="btn">Visit</a>
+                <a href="https://www.makemytrip.com/hotels/andamans-hotels.html?srsltid=AfmBOopdqF16D1E8Py4arFBvtoR5FuGqzE8JHYQpoe07i_Rj1R2bMqn4" class="btn">book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/holidays-india/andaman-travel-packages.html?gclid=Cj0KCQjw28W2BhC7ARIsAPerrcKgxklJXYNw4kp8SKDni3GeZoKpJGmOWGvw8AlLLE2tK62KOYSNWLcaAguIEALw_wcB&cmp=SEM|D|Holiday|G|Generic|DOM_India_Andaman_Desktop|Non_Brand_Andaman_Desktop|RSA|Regular|648848827913&s_kwcid=AL!1631!3!648848827913!p!!g!!andaman%20and%20nicobar%20islands%20package&ef_id=Cj0KCQjw28W2BhC7ARIsAPerrcKgxklJXYNw4kp8SKDni3GeZoKpJGmOWGvw8AlLLE2tK62KOYSNWLcaAguIEALw_wcB:G:s&gad_source=1" class="btn">book trip</a>
+                  <a href="https://www.tripadvisor.in/Restaurants-g297583-zfp10602-Andaman_and_Nicobar_Islands.html" class="btn">book resturant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+    <!-- Add more cards as needed -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container p-4 text-center">
+    <section class="mb-4">
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-google"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-github"></i></a>
+    </section>
+    <section class="mb-4 text-center">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="comment" class="form-control" placeholder="Comment here..."/>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-dark mb-4">Add Review</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+    <div class="text-center p-3 bg-dark text-light">
+      © 2024 Copyright: <a class="text-light" href="/">Indian Tourism</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+

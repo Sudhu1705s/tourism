@@ -1,0 +1,240 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>South India Tourism</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      font-size: large;
+      background-color: #222;
+      backdrop-filter: blur(50px);
+    }
+    .hero-section {
+      background: url('/path_to_your_hero_image.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .card {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .card-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+    .card-buttons a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .card-buttons a:nth-child(1) { background-color: #007bff; }
+    .card-buttons a:nth-child(2) { background-color: #28a745; }
+    .card-buttons a:nth-child(3) { background-color: #ffc107; }
+    .card-buttons a:nth-child(4) { background-color: #dc3545; }
+    .card-buttons a:hover {
+      opacity: 0.8;
+    }
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body style="background-color:rgb(255, 251, 245);">
+
+<!-- Header -->
+<nav class="navbar navbar-expand-sm fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" style="color: aliceblue; font-size: larger;" href="#">Indian Tourism</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="./about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a style="color: aliceblue;" class="nav-link dropdown-toggle" href="#" id="statesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Regions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="statesDropdown">
+            <a class="dropdown-item" href="./north.html">Northern Part of India</a>
+            <a class="dropdown-item" href="./east.html">Eastern Part of India</a>
+            <a class="dropdown-item" href="./west.html">Western Part of India</a>
+            <a class="dropdown-item" href="/North-East.html">North-Eastern Part of India</a>
+            <a class="dropdown-item" href="/central.html">Central Part of India</a>
+            <a class="dropdown-item" href="/Union.html">Union Territories of India</a>
+          </div>
+        </li>
+     
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="sign_in.html"><i class="fa fa-user"></i> Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="login.html"><i class="fa fa-sign-in"></i> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+  <h1 style="color: #222;">Explore South India</h1>
+  <p style="color: #222;">Discover the enchanting beauty and diverse cultures of South India.</p>
+</div>
+
+<!-- Content Section -->
+<div class="container mt-5">
+  <h2 class="text-center">Popular Destinations in South India</h2>
+  <div class="row">
+    <!-- Example Card -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="/img/andra.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+        <div class="card-body">
+          <h5 class="card-title">Andhra Pradesh</h5>
+          <p class="card-text">The Essence Of Incredible India</p>
+          <div class="card-buttons">
+            <a href="https://tourism.ap.gov.in/home" class="btn">Visit</a>
+            <a href="https://www.trivago.in/en-IN/odr/hotels-andhra-pradesh-india?search=200-64923" class="btn">Book hotel</a>
+           </div>
+           <div class="card-buttons">
+              <a href="https://www.makemytrip.com/bus-tickets/a-p-tourism-booking.html?srsltid=AfmBOopi_Sno393LlSYHP4yl_BuRMdFq3X402I-RWPqamTOgxk_O2XbD" class="btn">Book trip</a>
+              <a href="https://www.tripadvisor.in/Restaurants-g297585-Andhra_Pradesh.html" class="btn">Book Restaurant</a>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/karnataka.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Karnataka</h5>
+            <p class="card-text">One State Many World</p>
+            <div class="card-buttons">
+                <a href="https://www.karnatakatourism.org/" class="btn">Visit</a>
+                <a href="https://www.trivago.in/en-IN/odr/hotels-bengaluru-india?search=200-64975" class="btn">Book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/holidays-india/karnataka-travel-packages.html?srsltid=AfmBOoo7614djXtOfDo_GGfBdx5XZLBvJfHaYCQw0KOajPo20-fN1sbN" class="btn">Book Trip</a>
+                  <a href="https://www.tripadvisor.in/Restaurants-g297627-Karnataka.html" class="btn">Book Restaurant</a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/kerala.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">kerala</h5>
+            <p class="card-text">God's Own Country</p>
+            <div class="card-buttons">
+                <a href="http://www.keralatourism.org" class="btn">Visit</a>
+                <a href="https://www.tripadvisor.in/Restaurant_Review-g304558-d5325251-Reviews-Kera_South_Indian-Kolkata_Calcutta_Kolkata_District_West_Bengal.html" class="btn">Book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/holidays-india/kerala-travel-packages.html?gclid=Cj0KCQjw28W2BhC7ARIsAPerrcIXKUlRxaDXjDkWfhQKCSqDIoVJBvMxRAIkNQ6pKiLx4GW3xT_DcH0aApKPEALw_wcB&cmp=SEM|D|Holiday|G|Generic|DOM_India_Kerala_Desktop|Brand_Kerala|RSA|Regular|648788603434&s_kwcid=AL!1631!3!648788603434!p!!g!!kerala%20make%20my%20trip&ef_id=Cj0KCQjw28W2BhC7ARIsAPerrcIXKUlRxaDXjDkWfhQKCSqDIoVJBvMxRAIkNQ6pKiLx4GW3xT_DcH0aApKPEALw_wcB:G:s&gad_source=1" class="btn">Book Trip</a>
+                  <a href="https://www.trivago.in/en-IN/lm?themeId=1319&search=200-76&sem_keyword=trivago%20india&sem_creativeid=598703246592&sem_matchtype=p&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=&sem_param1=&sem_param2=&sem_campaignid=714020068&sem_adgroupid=35699827325&sem_targetid=aud-1678683578339:kwd-325856663991&sem_location=9061830&cipc=br&cip=9119000005&gad_source=1&gclid=Cj0KCQjw28W2BhC7ARIsAPerrcKDYKFFAn8EQmgCw4bSoAl1M7wR9RdzdPvGHfNXqvU499ji9R_M_lUaAhtDEALw_wcB" class="btn">Book Restaurant</a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/tamil_nadu.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Tamil Nadu</h5>
+            <p class="card-text">Enchanting Tamil Nadup>
+            <div class="card-buttons">
+                <a href="http://www.tamilnadutourism.org" class="btn">Visit</a>
+                <a href="https://www.trivago.com/tamil-nadu" class="btn">Book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/hotels/tamil_nadu-hotels.html" class="btn">Book Trip</a>
+                  <a href="https://www.tripadvisor.com/Hotels-g297807-Tamil_Nadu-Hotels.html" class="btn">Book Restaurant</a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/telengana.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Telangana</h5>
+            <p class="card-text">It's All In It </p>
+            <div class="card-buttons">
+              <a href="https://www.telanganatourism.gov.in/" class="btn">Visit</a>
+              <a href="https://www.trivago.com/telangana"  class="btn">book hotel</a>
+             </div>
+             <div class="card-buttons">
+                <a href="https://www.makemytrip.com/hotels/telangana-hotels.html" class="btn">Book Trip</a>
+                <a href="https://www.tripadvisor.com/Hotels-g297588-Telangana-Hotels.html" class="btn">Book Restaurant</a>
+             </div>
+          </div>
+        </div>
+      </div>
+    <!-- Add more cards as needed -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container p-4 text-center">
+    <section class="mb-4">
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-google"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-github"></i></a>
+    </section>
+    <section class="mb-4 text-center">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="comment" class="form-control" placeholder="Comment here..."/>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-dark mb-4">Add Review</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="mb-4 text-center">
+        <i class="fa fa-phone" aria-hidden="true"> +918100443406</i>
+      </section>
+    </div>
+    <div class="text-center p-3 bg-dark text-light">
+      © 2024 Copyright: <a class="text-light" href="/">Indian Tourism</a>
+    </div>
+  </footer>
+
+</body>
+</html>

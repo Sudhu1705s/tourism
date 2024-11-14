@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>North India Tourism</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      font-size: large;
+      background-color: #222;
+      backdrop-filter: blur(50px);
+    }
+    .hero-section {
+      background: url('/path_to_your_hero_image.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .card {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .card-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+    .card-buttons a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .card-buttons a:nth-child(1) { background-color: #007bff; }
+    .card-buttons a:nth-child(2) { background-color: #28a745; }
+    .card-buttons a:nth-child(3) { background-color: #ffc107; }
+    .card-buttons a:nth-child(4) { background-color: #dc3545; }
+    .card-buttons a:hover {
+      opacity: 0.8;
+    }
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body style="background-color:rgb(255, 251, 245);">
+
+<!-- Header -->
+<nav class="navbar navbar-expand-sm fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" style="color: aliceblue; font-size: larger;" href="#">Indian Tourism</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="./about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a style="color: aliceblue;" class="nav-link dropdown-toggle" href="#" id="statesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Regions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="statesDropdown">
+            <a class="dropdown-item" href="/south.html">Southern Part of India</a>
+            <a class="dropdown-item" href="./east.html">Eastern Part of India</a>
+            <a class="dropdown-item" href="./west.html">Western Part of India</a>
+            <a class="dropdown-item" href="/North-East.html">North-Eastern Part of India</a>
+            <a class="dropdown-item" href="/central.html">Central Part of India</a>
+            <a class="dropdown-item" href="/Union.html">Union Territories of India</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="./sign_in.html"><i class="fa fa-user"></i> Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="./login.html"><i class="fa fa-sign-in"></i> Login</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+  <h1 style="color: #222;">Explore North India</h1>
+  <p style="color: #222;">Experience the rich cultural heritage and stunning landscapes of North India.</p>
+</div>
+
+<!-- Content Section -->
+<div class="container mt-5">
+  <h2 class="text-center">Popular Destinations in North India</h2>
+  <div class="row">
+    <!-- Example Card -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/uttarpradesh.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Uttarpradesh</h5>
+            <p class="card-text">Amazing Heritage Grand Experience</p>
+            <div class="card-buttons">
+                <a href="https://uptourism.gov.in/en" class="btn">Visit</a>
+                <a href="https://www.trivago.com/uttar-pradesh" class="btn">Book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/hotels/uttar_pradesh-hotels.html" class="btn">Book trip</a>
+                  <a href="https://www.tripadvisor.com/Hotels-g297685-Uttar_Pradesh-Hotels.html" class="btn">Book restaurant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/punjab.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Punjab</h5>
+            <p class="card-text">India Begins Here</p>
+            <div class="card-buttons">
+                <a href="https://punjabtourism.punjab.gov.in/" class="btn">Visit</a>
+                <a href=": https://www.trivago.com/punjab" class="btn">Book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href=": https://www.makemytrip.com/hotels/punjab-hotels.html" class="btn">Book trip</a>
+                  <a href="https://www.tripadvisor.com/Hotels-g297666-Punjab-Hotels.html" class="btn">Book restaurant</a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/himachal_pradesh.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Himachal Pradesh</h5>
+            <p class="card-text">Unforgottable Himachal</p>
+            <div class="card-buttons">
+                <a href="https://himachaltourism.gov.in/" class="btn">Visit</a>
+                <a href="https://www.trivago.in/en-IN/odr/hotels-himachal-pradesh-india?search=200-64935" class="btn">Book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/holidays-international/himachal_pradesh-tourism.html?gclid=Cj0KCQjw28W2BhC7ARIsAPerrcJP88Nzqk18ldr7V7DDnnMZBQmAJJdMs1HUlSq9rbmroV_Ab8iWg1EaAkHGEALw_wcB&ef_id=Cj0KCQjw28W2BhC7ARIsAPerrcJP88Nzqk18ldr7V7DDnnMZBQmAJJdMs1HUlSq9rbmroV_Ab8iWg1EaAkHGEALw_wcB:G:s&cmp=SEM|D|Holiday|G|DSA|OBT_India_DSA_Desktop|OBT_Non_Brand_DSA|ETA|Regular|661301556643&gad_source=1" class="btn">book trip</a>
+                  <a href="https://www.tripadvisor.in/Restaurants-g297617-Himachal_Pradesh.html" class="btn">Book restaurant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/haryana.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Haryana</h5>
+            <p class="card-text">A Pioneer In Highway Tourism</p>
+            <div class="card-buttons">
+                <a href="http://haryanatourism.gov.in/" class="btn">Visit</a>
+                <a href="https://www.trivago.in/en-IN/odr/hotels-haryana-india?search=200-64934" class="btn">Book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/hotels/gurgaon-hotels.html?srsltid=AfmBOoobgW4GskonIQZsW_wGBD6u4I3rRaItB-b21QhDdy0OP5j5vaQs" class="btn">book trip</a>
+                  <a href="https://www.tripadvisor.in/Restaurants-g297614-Haryana.html" class="btn">Book restaurant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/img/uttrakhand.jpg" class="card-img-top" alt="Destination" style="height: 190px;">
+          <div class="card-body">
+            <h5 class="card-title">Uttrakhand</h5>
+            <p class="card-text">Exploring Uttarakhand</p>
+            <div class="card-buttons">
+                <a href="http://uttarakhandtourism.gov.in/" class="btn">Visit</a>
+                <a href="https://www.trivago.com/uttarakhand" class="btn">Book hotel</a>
+               </div>
+               <div class="card-buttons">
+                  <a href="https://www.makemytrip.com/hotels/uttarakhand-hotels.html" class="btn">Book trip</a>
+                  <a href=" https://www.tripadvisor.com/Hotels-g297686-Uttarakhand-Hotels.html" class="btn">Book restaurant </a>
+               </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Add more cards as needed -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container p-4 text-center">
+    <section class="mb-4">
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-google"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-github"></i></a>
+    </section>
+    <section class="mb-4 text-center">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="comment" class="form-control" placeholder="Comment here..."/>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-dark mb-4">Add Review</button>
+            </div>
+          </div>
+        </form>
+      </section>
+        <section class="mb-4 text-center">
+          <i class="fa fa-phone" aria-hidden="true"> +918100443406</i>
+        </section>
+    </div>
+    <div class="text-center p-3 bg-dark text-light">
+      © 2024 Copyright: <a class="text-light" href="/">Indian Tourism</a>
+    </div>
+  </footer>
+
+</body>
+</html>
