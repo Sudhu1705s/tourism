@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Indian Tourism</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    /* Navbar styles */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      font-size: large;
+      background-color: #222;
+      backdrop-filter: blur(5px);
+    }
+
+    /* Hero section styles */
+    .hero-section {
+      background: url('/path_to_your_hero_image.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    
+    .hero-section h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    
+    .hero-section p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+
+    /* Card styles */
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+      border: 1px solid #ddd;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-body {
+      padding-top: 15px;
+    }
+
+    .card-img-top {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 15px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    /* Custom background and font-size */
+    body {
+      background-color: antiquewhite;
+      font-size: larger;
+    }
+
+    /* Dropdown and hover effect styles */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-sm fixed-top">
+  <div class="container-fluid"> 
+    <a style="color: aliceblue; font-size:larger" class="navbar-brand" href="javascript:void(0)">Indian Tourism</a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a style="color:aliceblue;" class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: aliceblue;" class="nav-link" href="./about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a style="color: aliceblue;" class="nav-link dropdown-toggle" href="#" id="statesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Regions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="statesDropdown">
+            <a class="dropdown-item" href="./north.html">Northern Part of India</a>
+            <a class="dropdown-item" href="./south.html">Southern Part of India</a>
+            <a class="dropdown-item" href="./east.html">Eastern Part of India</a>
+            <a class="dropdown-item" href="./west.html">Western Part of India</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a style="color: aliceblue;" href="#" class="nav-link"><i class="fa fa-user-plus"></i> Admin</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+  <h1>Welcome to Indian Tourism</h1>
+  <p>Discover the beauty and diversity of India</p>
+  <a href="#explore" class="btn btn-primary btn-lg">Explore Now</a>
+</div>
+
+<!-- Carousel -->
+<div class="container-fluid mt-5">
+  <div class="row justify-content-center">
+    <div class="col-12 carousel-container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/bengalurur.jpg" class="d-block w-100" alt="First Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First Slide Label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/india-gate.avif" class="d-block w-100" alt="Second Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second Slide Label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/victoriaa.jpg" class="d-block w-100" alt="Third Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third Slide Label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- region section -->
+<div class="container-fluid mt-5">
+  <h1 class="text-center my-4" id="explore">Mainland India's Regions</h1>
+  <div class="row">
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <img src="img/northern_india.png" class="card-img-top" alt="central">
+        <div class="card-body">
+          <h5 class="card-title">Northern Part of India</h5>
+          <p class="card-text">Unity in Diversity, Heritage in Harmony</p>
+          <a href= "./north.html"class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <img src="/img/south-india.jpg" class="card-img-top" alt="Odisha">
+        <div class="card-body">
+          <h5 class="card-title">Southern Part Of India</h5>
+          <p class="card-text">Land of Spices, Art, and Innovation</p>
+          <a href="/south.html" class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <img src="img/eastern.jpg" class="card-img-top" alt="West Bengal">
+        <div class="card-body">
+          <h5 class="card-title">Eastern Part of India</h5>
+          <p class="card-text">Where Nature and Culture Thrive Together</p>
+          <a href="/east.html" class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="/img/western.jpg" class="card-img-top" alt="Meghalaya">
+          <div class="card-body">
+            <h5 class="card-title">Western Part Of India</h5>
+            <p class="card-text">State tourism motto</p>
+            <a href="/west.html" class="btn btn-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="/img/central.jpg" class="card-img-top" alt="Odisha">
+          <div class="card-body">
+            <h5 class="card-title">Central Part of India</h5>
+            <p class="card-text">State tourism motto</p>
+            <a href="/south.html" class="btn btn-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="/img/north_east.jpg" class="card-img-top" alt="Odisha">
+          <div class="card-body">
+            <h5 class="card-title">North_Eastern Part Of India</h5>
+            <p class="card-text">State tourism motto</p>
+            <a href="/south.html" class="btn btn-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Popular States Section -->
+  <div class="container-fluid mt-5">
+    <h1 class="text-center my-4" id="explore">Popular States</h1>
+  
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="/img/oddisah.jpg" class="card-img-top" alt="Odisha">
+          <div class="card-body">
+            <h5 class="card-title">Odisha</h5>
+            <p class="card-text">State tourism motto</p>
+            <a href="ttps://odishatourism.gov.in/content/tourism/en.html" class="btn btn-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="/img/maharastra.webp" class="card-img-top" alt="Odisha" style="height: 30vh;">
+          <div class="card-body">
+            <h5 class="card-title">maharastra</h5>
+            <p class="card-text">State tourism motto</p>
+            <a href="ttps://maharashtratourism.gov.in/districts/mumbai-city/" class="btn btn-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="/img/west_bengal.jpg" class="card-img-top" alt="West Bengal">
+          <div class="card-body">
+            <h5 class="card-title">West Bengal</h5>
+            <p class="card-text">State tourism motto</p>
+            <a href="ttps://wbtourism.gov.in/" class="btn btn-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="/img/meghalaya.png" class="card-img-top" alt="Meghalaya">
+          <div class="card-body">
+            <h5 class="card-title">Meghalaya</h5>
+            <p class="card-text">State tourism motto</p>
+            <a href="ttps://www.meghalayatourism.in/" class="btn btn-primary">Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img src="/img/assam.png" class="card-img-top" alt="Odisha">
+        <div class="card-body">
+          <h5 class="card-title">Assam</h5>
+          <p class="card-text">State tourism motto</p>
+          <a href="ttps://odishatourism.gov.in/content/tourism/en.html" class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img src="/img/Nagaland.webp" class="card-img-top" alt="Odisha">
+        <div class="card-body">
+          <h5 class="card-title">Nagaland</h5>
+          <p class="card-text">State tourism motto</p>
+          <a href="ttps://maharashtratourism.gov.in/districts/mumbai-city/" class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img src="/img/bihar.jpg" class="card-img-top" alt="West Bengal">
+        <div class="card-body">
+          <h5 class="card-title">Bihar</h5>
+          <p class="card-text">State tourism motto</p>
+          <a href="ttps://wbtourism.gov.in/" class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img src="/img/uttarpradesh.jpg" class="card-img-top" alt="Meghalaya">
+        <div class="card-body">
+          <h5 class="card-title">Uttar Pradesh</h5>
+          <p class="card-text">State tourism motto</p>
+          <a href="ttps://www.meghalayatourism.in/" class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-light text-dark mt-4">
+    <div class="container p-4">
+      <section class="mb-4 text-center">
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-google"></i></a>
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa fa-github"></i></a>
+      </section>
+      <section class="mb-4 text-center">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="comment" class="form-control" placeholder="Comment here..."/>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-dark mb-4">Add Review</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="mb-4 text-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat voluptatibus
+        placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam sequi voluptate quas.</p>
+      </section>
+    </div>
+    <div class="text-center p-3 bg-dark text-light">
+      © 2024 Copyright: <a class="text-light" href="/">Indian Tourism</a>
+    </div>
+  </footer>
